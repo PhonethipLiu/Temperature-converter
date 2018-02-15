@@ -2,17 +2,17 @@ console.log("The temperature is getting hot in here!");
 
 var check_C = document.getElementById("Checkbox_C");
 var check_F = document.getElementById("Checkbox_F");
-var check_X = document.getElementById("Checkbox_X");
+var reset = document.getElementById("btn_reset");
 var convertedTemp = document.getElementById("converted_temp");
 
-function toCelsius(number) {
-    value = parseFloat(number);
+function toCelsius(value) {
+    value = parseFloat(value);
     convertedTemp.innerHTML = (value - 32) / 1.8 + "&deg; C";
     console.log(toCelsius());
 }
 
-function toFahrenheit(number) {
-    value = parseFloat(number);
+function toFahrenheit(value) {
+    value = parseFloat(value);
     convertedTemp.innerHTML = (value * 1.8) * 32 + "&deg; F";
 }
 
@@ -23,14 +23,25 @@ var button = document.getElementById("converter");
 // happen based on which radio button is selected.
 function determineConverter (clickEvent) {
     console.log("event", clickEvent);
-    if (check_C === true) {
+    if (check_C === true){
+        return toFahrenheit(value) ;
+    } else if (check_F === true) {
         return toCelsius(value);
-    } else if (check_F === false) {
-        return toFahrenheit(value);
     }
 };   
 // Assign a function to be executed when the button is clicked
 button.addEventListener("click", determineConverter);
+
+
+let inputValue = document.getElementById("");
+inputMessage.addEventListener("keyup", valueEnter);
+
+function valueEnter(){
+    if (event.which === 13 || event.keyCode == 13) {
+        messageDisplay();
+        return false;
+    }
+}
 
 
   //comparison

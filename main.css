@@ -31,9 +31,9 @@ ul {
     display: inline-block;
     padding-right: 10px;
     width: 40%;
-    height: 200px;
     align-content: space-around;
     flex-wrap: nowrap; 
+    align-items: stretch;
     
 }
 .btn-convert,
