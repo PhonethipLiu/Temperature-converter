@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temperature converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+
+<!-- In the HTML, have one input field where someone can enter in a temperature. -->
+
+    <section class="C_wrapper">
+        <h1>Temperature converter</h1>
+        <div class="flex-container-1">
+            <p><label>Temperature</label><br>
+            <input id="value" type="number" placeholder="Enter a number"></p>
+            <p><input class="btn-temp-type" type="radio" name="degree" value="F" id="Check_F" > Fahrenheit <br>
+            <input class="btn-temp-type" type="radio" name="degree" value="C" id="Check_C" > Celsius </p>
+            <p><button class="btn-convert" event="onclick" name="clear" value="CV" id="converter">Convert</button> </p>
+        
+        </div>
+<!-- Create a block level element that will hold the text of the converted temperature. -->
+      
+        <div class="flex-container-2">
+            <p><label>Conversion </label><br>
+            <input id="output_box" id="converted_temp"></p>
+            <p><button class="btn-reset" event="onclick" name="reset" value="X" id="btn_reset"> Reset </button></p>
+        </div>
+        
+    </section>
+
+    <section class="instructions">
+        <h3>UX/UI Milestone 2: Temperature converter exercise instructions</h3>
+        <ol>
+            <li> In the HTML, have one input field where someone can enter in a temperature.</li>
+            <li>Create a radio button group where Celsius or Fahrenheit can be selected as the scale that the number should be converted to.</li>
+            <li>Create a block level element that will hold the text of the converted temperature.</li>
+            <li>Create a button that, when clicked, displays the converted temperature.</li>
+            <li>Create another button that, when clicked, clears any text in the input field.</li>
+            <li>Add an event handler to the input field that checks if the user pressed the enter key, and if that happens, perform the conversion.</li>
+             <ul>
+                <li>If the temperature is greater than 90F/32C the color of the converted temperature should be red.</li>
+                <li>If the temperature is less than 32F/0C the color of the converted temperature should be blue.</li>
+                <li>For any other temperature, the color should be green.</li>
+            </ul>
+        </ol>
+    </section>
+<script src="converter.js"></script>
+</body>
+</html>

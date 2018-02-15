@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, sans-serif;
+    color: rgb(70, 70,70);
+    margin: 1em 3em;
+}
+
+label {
+    font-size: .7em;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: rgb(113, 143, 113);
+    text-transform: uppercase;
+}
+
+li {
+    padding:.5em .2em;
+}
+
+ul {
+    list-style: square;
+}
+/* ====== class styles ========== */
+
+/* containers */
+.C_wrapper {
+    padding: 2em 2em;
+    background-color: rgb(233, 235, 236);
+}
+.flex-container-1,
+.flex-container-2 {
+    display: inline-block;
+    padding-right: 10px;
+    width: 40%;
+    align-content: space-around;
+    flex-wrap: nowrap; 
+    align-items: stretch;
+    
+}
+.btn-convert,
+.btn-reset {
+    border-radius: 50px;
+}
+
+/* id styles */
+#output_box,
+#value {
+    height: 60px;
+    width: 160px;
+    background-color: white;
+    padding:.5em;
+    font-size: 1.6em;
+}
