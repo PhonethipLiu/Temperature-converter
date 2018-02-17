@@ -11,14 +11,14 @@
 <body>
 
 <!-- In the HTML, have one input field where someone can enter in a temperature. -->
-
+<main>
+    <h1>Temperature converter</h1>
     <section class="C_wrapper">
-        <h1>Temperature converter</h1>
-        <div class="flex-container-1">
-            <p><label>Temperature</label><br>
+        <div class="flex-container">
+            <p class="label">Temperature</p>
 
         <!-- input temp num -->
-            <input id="temp_input" type="number" placeholder="Enter a number"></p>
+            <p><input id="temp_input" type="number" placeholder="Enter"> </p>
 
             <!-- radial buttons -->
             <p><input class="btn-temp-type" type="radio" name="degree" value="F" id="F" checked> Fahrenheit <br>
@@ -31,10 +31,10 @@
         </div>
 <!-- Create a block level element that will hold the text of the converted temperature. -->
       
-        <div class="flex-container-2">
-                <label>Conversion </label><br>
-            <p id="temp_output" style="color:black">  
-
+        <div class="flex-container">
+                <p class="label">Conversion </p>   
+            <p id="temp_output" style="color:black">
+              <!-- output temp goes here -->
             </p>
 
             <!-- clear button -->
@@ -42,6 +42,7 @@
         </div>
         
     </section>
+    </main>
 
     <section class="instructions">
         <h3>UX/UI Milestone 2: Temperature converter exercise instructions</h3>

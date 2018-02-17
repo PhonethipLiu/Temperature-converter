@@ -1,15 +1,6 @@
 body{
     font-family: Arial, sans-serif;
     color: rgb(70, 70,70);
-    margin: 1em 3em;
-}
-
-label {
-    font-size: .7em;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    color: rgb(113, 143, 113);
-    text-transform: uppercase;
 }
 
 li {
@@ -19,34 +10,66 @@ li {
 ul {
     list-style: square;
 }
+
+h1{
+    color: rgb(253, 252, 253);
+    padding: 2em 1.5em 0em 1.5em;
+}
+
 /* ====== class styles ========== */
 
-/* containers */
-.C_wrapper {
-    padding: 2em 2em;
-    background-color: rgb(233, 235, 236);
+.label {
+    font-size: .7em;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: rgb(253, 252, 253);
+    text-transform: uppercase;
 }
-.flex-container-1,
-.flex-container-2 {
-    display: inline-block;
-    padding-right: 10px;
-    width: 40%;
-    align-content: space-around;
+
+/* containers */
+main{
+    background: linear-gradient(to right, rgb(153, 192, 199) , rgb(33, 56, 119));
+}
+.C_wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+.flex-container {
+    flex: 1;
+    padding: 0em 3rem 2em 3rem;
+    width: 50%;
     flex-wrap: nowrap; 
-    align-items: stretch;
-    
 }
 .btn-convert,
 .btn-reset {
     border-radius: 50px;
+    width: 80px;
+    padding: 5px 0px;
+}
+
+.instructions {
+    padding: 2em 3em;
 }
 
 /* id styles */
-#temp_output,
+#temp_output {
+    height: 36px;
+    width: 160px;
+    background-color: white;
+    padding: .4em .7em;
+    font-size: 2rem;
+    margin-top: .5em; 
+    border: 1px solid rgba(230, 238, 247, 0.8); 
+    box-shadow: 3px 3px 15px 0px rgb(216, 214, 215) inset; 
+    
+}
+
 #temp_input {
     height: 60px;
     width: 160px;
     background-color: white;
-    padding:.5em;
-    font-size: 1.6em;
+    padding: 0em .5em;
+    font-size: 2rem; 
+    border: 1px solid rgba(230, 238, 247, 0.8);  
+    box-shadow: 3px 3px 15px 0px rgb(216, 214, 215) inset;
 }
